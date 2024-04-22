@@ -4,16 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/uts/views/asset/img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="/uts/views/asset/vendor/bootstrap/css/bootstrap.css">
+  <link rel="shortcut icon" href="/uts/views/asset/img/ico.png" type="image/x-icon">
   <link rel="stylesheet" href="/uts/views/asset/vendor/fontawesome/css/fontawesome.css">
   <link rel="stylesheet" href="/uts/views/asset/vendor/fontawesome/css/brands.css">
   <link rel="stylesheet" href="/uts/views/asset/vendor/fontawesome/css/solid.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="/uts/views/asset/css/style.css">
   <title>Beranda</title>
 </head>
@@ -21,7 +15,7 @@
 <body>
   <div class="topbar">
     <div class="leftbar">
-      <img class="menu-img" src="/uts/views/asset/img/menu.svg" alt="menu">
+      <img class="menu-img" src="/uts/views/asset/img/menu.svg" alt="menu" id="menu">
       <div class="logo">
         <img class="logo-img" src="/uts/views/asset/img/icon.png" alt="class-room">
         <h3 class="">Classroom</h3>
@@ -35,9 +29,12 @@
       </div>
     </div>
   </div>
-  <div class="side-in"></div>
+
+  <div class="side-in">
+  </div>
+
   <div class="sidebar">
-    <div class="nav scrollarea">
+    <div class="nav">
       <ul>
         <li class="active">
           <div class="nav-link-group">
@@ -48,7 +45,7 @@
               <path d="M9 22V12H15V22" fill="#5F6368" />
               <path d="M9 22V12H15V22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <a href="">Beranda</a>
+            <a href="" id="nav-link">Beranda</a>
           </div>
         </li>
         <li>
@@ -61,7 +58,7 @@
               <line x1="8" y1="2" x2="8" y2="6"></line>
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
-            <a href="">Kalender</a>
+            <a href="" id="nav-link">Kalender</a>
           </div>
         </li>
       </ul>
@@ -75,7 +72,7 @@
             <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><circle cx="17" cy="12.5" r="2.5"></circle>
               <path d="M17 15.62c-1.67 0-5 .84-5 2.5V20h10v-1.88c0-1.66-3.33-2.5-5-2.5zM10 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm1.82 9.17c.01 0 0 0 0 0zM10 13c-2.67 0-8 1.34-8 4v3h8v-2H4v-.99c.2-.72 3.3-2.01 6-2.01.6 0 1.22.07 1.82.17h.01l2.07-1.55c-1.39-.41-2.85-.62-3.9-.62z"></path>
             </svg>
-            <p class="title" href="">Mengajar</p>
+            <p class="title" id="nav-link" href="">Mengajar</p>
           </div>
         </li>
         <div class="panel">
@@ -86,7 +83,7 @@
                   <rect fill="none" height="24" width="24"></rect>
                 </g>
               </svg>
-              <a href="">Untuk diperiksa</a>
+              <a href="" id="nav-link">Untuk diperiksa</a>
             </div>
           </li>
           <li>
@@ -94,7 +91,7 @@
               <div class="pp-class bg-cyan">I</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <a href="" class="">
+                  <a href="" id="nav-link">
                     Inovasi Education
                   </a>
                 </div>
@@ -115,16 +112,14 @@
                 d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z">
               </path>
             </svg>
-            <p class="title" href="">Terdaftar</p>
+            <p class="title" id="nav-link" href="">Terdaftar</p>
           </div>
         </li>
         <div class="panel">
           <li class="">
             <div class="nav-link-group">
               <svg focusable="false" height="24" viewBox="0 0 24 24" width="24" class=" NMm5M">
-                <g>
-                  <rect fill="none" height="24" width="24"></rect>
-                </g>
+                <g><rect fill="none" height="24" width="24"></rect></g>
                 <g>
                   <g>
                     <path
@@ -138,7 +133,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="">Daftar tugas</a>
+              <a href="" id="nav-link">Daftar tugas</a>
             </div>
           </li>
           <li>
@@ -146,7 +141,7 @@
               <div class="pp-class bg-blue">S</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     Sistem Operasi Kelas C 23/24
                   </p>
                 </div>
@@ -158,7 +153,7 @@
               <div class="pp-class bg-black">K</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     KECERDASAN BUATAN B
                   </p>
                   <!-- <p>PKN</p> -->
@@ -171,7 +166,7 @@
               <div class="pp-class bg-cyan">G</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     GRAFIKA KOMPUTER B
                   </p>
                   <!-- <p>PKN</p> -->
@@ -184,10 +179,10 @@
               <div class="pp-class bg-orange">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XII RPL
                   </p>
-                  <p class="desc">PKN</p>
+                  <p class="desc" id="nav-link">PKN</p>
                 </div>
               </div>
             </div>
@@ -197,10 +192,10 @@
               <div class="pp-class bg-cyan">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XII RPL
                   </p>
-                  <p class="desc">MULOK JAWA</p>
+                  <p class="desc" id="nav-link">MULOK JAWA</p>
                 </div>
               </div>
             </div>
@@ -210,10 +205,10 @@
               <div class="pp-class bg-green">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XII RPL 2021-2022
                   </p>
-                  <p class="desc">SEMESTER GANJIL</p>
+                  <p class="desc" id="nav-link">SEMESTER GANJIL</p>
                 </div>
               </div>
             </div>
@@ -223,7 +218,7 @@
               <div class="pp-class bg-blue">E</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     English Class XII RPL
                   </p>
                   <!-- <p>PKN</p> -->
@@ -236,7 +231,7 @@
               <div class="pp-class bg-black">1</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     12 RPL 2021
                   </p>
                   <!-- <p>PKN</p> -->
@@ -249,10 +244,10 @@
               <div class="pp-class bg-black">P</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     PBO (PEMOGRAMAN BERORIENTASI OBJECT)
                   </p>
-                  <p class="desc">XI RPL</p>
+                  <p class="desc" id="nav-link">XI RPL</p>
                 </div>
               </div>
             </div>
@@ -262,10 +257,10 @@
               <div class="pp-class bg-blue">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XI RPL(Pemodelan&Basisdata)
                   </p>
-                  <p class="desc"></p>
+                  <p class="desc" id="nav-link"></p>
                 </div>
               </div>
             </div>
@@ -275,10 +270,10 @@
               <div class="pp-class bg-blue">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XI RPL
                   </p>
-                  <p class="desc">Tahun Pelajaran 2020/2021</p>
+                  <p class="desc" id="nav-link">Tahun Pelajaran 2020/2021</p>
                 </div>
               </div>
             </div>
@@ -288,10 +283,10 @@
               <div class="pp-class bg-blue">X</div>
               <div class="title-class">
                 <div class="desc-class">
-                  <p class="title">
+                  <p class="title" id="nav-link">
                     XI RPL 2020
                   </p>
-                  <p class="desc">Pemrograman web dan Perangkat bergerak</p>
+                  <p class="desc" id="nav-link">Pemrograman web dan Perangkat bergerak</p>
                 </div>
               </div>
             </div>
@@ -307,7 +302,7 @@
                 d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z">
               </path>
             </svg>
-            <a href="">Kelas yang diarsipkan</a>
+            <a href="" id="nav-link">Kelas yang diarsipkan</a>
           </div>
         </li>
         <li>
@@ -318,14 +313,197 @@
               </path>
               <circle cx="12" cy="12" r="3.5"></circle>
             </svg>
-            <a href="">Setelan</a>
+            <a href="" id="nav-link">Setelan</a>
           </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <script src="/uts/views/asset/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <div class="main-content">
+    <div class="row">
+      <div class="card">
+        <div class="head-card bg-head-blue">
+          <div class="top">
+            <a>Sistem Operasi Kelas C 23/24</a>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+          <a href="">Laboratorium Infrastruktur Teknologi Fasilkom</a>
+          <div class="pp-author">
+            <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+          </div>
+        </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-black">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+          <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+          <div class="pp-author">
+            <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+          </div>
+        </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-cyan">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+          <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+          <div class="pp-author">
+            <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+          </div>
+        </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-orange">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+          <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+          <div class="pp-author">
+            <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+          </div>
+        </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="head-card bg-head-cyan">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+            <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+            <div class="pp-author">
+              <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+            </div>
+          </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-cyan">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+            <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+            <div class="pp-author">
+              <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+            </div>
+          </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-cyan">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+            <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+            <div class="pp-author">
+              <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+            </div>
+          </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head-card bg-head-cyan">
+          <div class="top">
+            <p>Sistem Operasi Kelas C 23/24</p>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="head-desc">
+            <p>Laboratorium Infrastruktur Teknologi Fasilkom</p>
+            <div class="pp-author">
+              <img class="author-img" src="/uts/views/asset/img/pp.png" alt="">
+            </div>
+          </div>
+        <div class="body-card"></div>
+        <hr>
+        <div class="footer-card">
+          <div class="footer-icon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z"></path><path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z"></path></svg>
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" class=" NMm5M"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <script src="/uts/views/asset/vendor/bootstrap/js/bootstrap.bundle.js"></script> -->
   <script src="/uts/views/asset/js/app.js"></script>
 </body>
 
